@@ -11,8 +11,8 @@ import sys
 path =  'C:/new_tdx/'
 Index = 86#系统选股公式一共83个
 corp_id = 'wx87780fb826353ecc'
-secret = 'WVClMaoadG7yP6sbsEox5HCwuHFG1SjrDqIjMVVfQmc'
-agentid = 1000002
+secret = 'XlOvsTpuNaINPsV2Wm6TMRLt_k1lgxZjJwrSaVND0Lo'
+agentid = 1000003
 
 #打开通达信
 def Open_TDX():
@@ -25,6 +25,7 @@ def Open_TDX():
         
 #免费行情
 def Free_quotation():
+    time.sleep(3)
     try:
         Tab_handle = win32gui.FindWindowEx(win32gui.FindWindow('#32770','通达信金融终端V7.35'),None,'SysTabControl32','Tab1')
         #print(hex(Tab_handle))
@@ -142,8 +143,10 @@ def Close_TDX():
 if __name__=='__main__':
     while 1:
         if int(time.strftime("%H%M%S"))== 90000:
+            pass
+            #Open_TDX()
+        elif int(time.strftime("%H%M%S"))== 121400:#or int(time.strftime("%H%M%S"))== 114200:
             Open_TDX()
-        elif int(time.strftime("%H%M%S"))== 120000:
             Free_quotation()
             Info()
             Ctrl_T()

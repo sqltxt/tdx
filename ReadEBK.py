@@ -25,4 +25,4 @@ def wx_msg(corp_id, secret,agentid,msg):
 def Send_wx():
     with open('每日选股'+str(int(time.strftime("%Y%m%d")))+'.EBK') as f:
         d=f.read()
-        wx_msg('wx87780fb826353ecc','WVClMaoadG7yP6sbsEox5HCwuHFG1SjrDqIjMVVfQmc',1000002,d)
+        wx_msg('wx87780fb826353ecc','XlOvsTpuNaINPsV2Wm6TMRLt_k1lgxZjJwrSaVND0Lo',1000003,d)

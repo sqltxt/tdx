@@ -9,8 +9,8 @@ from commctrl import LVM_GETITEMTEXT, LVM_GETITEMCOUNT
 import ReadEBK
 import sys
 corp_id = 'wx87780fb826353ecc'
-secret = 'WVClMaoadG7yP6sbsEox5HCwuHFG1SjrDqIjMVVfQmc'
-agentid = 1000002
+secret = 'XlOvsTpuNaINPsV2Wm6TMRLt_k1lgxZjJwrSaVND0Lo'
+agentid = 1000003
 
 def handle_window(hwnd,extra):#TB_handle句柄
     if win32gui.IsWindowVisible(hwnd):
